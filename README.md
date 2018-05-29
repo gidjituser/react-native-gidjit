@@ -15,13 +15,13 @@ See the official [React Native website](https://facebook.github.io/react-native/
 ### Bundling and testing
 1. Copy the two scripts **bundle.sh** and **share.sh** in to your project repo's root or child directory. You could even add this repo as a submodule for best results.
 2. Run `chmod +x bundle.sh share.sh`
-3. Run `bundle.sh -e index.ios.js`, where index.ios.js is your entry-file. For more help just type `bundle.sh -h`
+3. Run `./bundle.sh -e index.ios.js`, where index.ios.js is your entry-file. The entry-file path should be relative to the project root or package.json. For more help just type `./bundle.sh -h`
 4. Use the QR code generated to test locally following instructions from bundle.sh
 
 ***You can install all the packages you like. All of your node modules will be bundled. The exception are react native libraries that need linking. Fortunately, Gidjit comes with many common react native libraries already linked - listed below.***
 
 ### Move bundle/zip to cloud and share
-1. Run `share.sh -u URL`, where URL is a publicly accessible location of the app.zip from the bundle section (For example Amazon S3 or Google Cloud drive). For more help just type `share.sh -h`
+1. Run `./share.sh -u URL`, where URL is a publicly accessible location of the app.zip from the bundle section (For example Amazon S3 or Google Cloud drive). For more help just type `./share.sh -h`
 2. Share the QR code generated with others. Once they install Gidjit they can just scan the QR code with their Photo app and complete the rest of the setup.
 
 ### What Gidjit Provides
