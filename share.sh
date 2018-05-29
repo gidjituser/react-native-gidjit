@@ -28,7 +28,7 @@ function showUsage {
 
 
     When scanned from your iDevice camera it will open Gidjit if installed - 
-    https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?mt=8. 
+    https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8. 
     Users will be able to complete the rest of your React Native App
     installation inside the app. A user can also manually add the action inside
     Gidjit by 
@@ -41,7 +41,7 @@ function showUsage {
     5. Complete the rest of the setup - customizing icon and label of App
 
     Example:
-    $(basename "$0") -u https://drive.google.com/file/d/XXXXXX_XXXXXXc3RhcnRlcl9maWxl/view?usp=sharing
+    $(basename "$0") -u 'https://s3-us-west-2.amazonaws.com/g.../app.zip' 
 "
 }
 while getopts "hu:" opt; do

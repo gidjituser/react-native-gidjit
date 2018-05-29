@@ -23,7 +23,7 @@ function showUsage {
     This script will bundle and zip your project so that it can be run from
     Gidjit - Smart Launcher on your iDevice. On success, a QR code will be generated. 
     When scanned from your iDevice camera it will open Gidjit if installed - 
-    https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?mt=8. 
+    https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8. 
     You will then be able to complete the rest of your React Native uApp
     installation inside the app.
 
