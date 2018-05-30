@@ -2,7 +2,7 @@
 # Description
 
 This Repo contains two simple scripts that will allow you to add, launch, and run your React Native apps inside of Gidjit - Smart Launcher.
-The scripts will generate QR codes so that you can share with others.
+The scripts will generate QR codes so that you can easily share it across your iDevices or with family and friends.
 Gidjit is available on the  [AppStore](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
 Currently iOS 10.0+ only. We will begin working on Android variant soon.
 
@@ -20,14 +20,14 @@ See the official [React Native website](https://facebook.github.io/react-native/
 
 ***You can install all the packages you like. All of your node modules and assets will be bundled. The exception are react native libraries that need linking. Fortunately, Gidjit comes with many common react native libraries already linked - listed below.***
 
-### Move bundle/zip to cloud and share
+### Move bundle/zip to the cloud and share
 1. Move the generated app.zip from the bundle step to the cloud (For example Amazon S3 or Google Cloud drive). You can rename it if you like. Ensure it is gets public permissions to read.
 2. Run `./react-native-gidjit/share.sh -u URL`, where URL is the publicly accessible location. For more help just type `./react-native-gidjit/share.sh -h`
-3. Share the QR code generated with others. Once they install Gidjit they can just scan the QR code with their Photo app and complete the rest of the setup.
+3. Once Gidjit is installed on an iPhone/iPad, the QR code can be scanned by the **📷 Photo App** to install and setup. 
 
 ### What Gidjit Provides
-- Users can update your app from inside Gidjit. (As long as the cloud URL stays the same)
-- From the Gidjit app you can hide/show the primary app navigation bar with a three finger tap on the screen.
+- Your app can be updated inside Gidjit. (As long as the cloud URL stays the same)
+- You can hide/show Gidjit's primary app navigation bar with a three finger tap on the screen.
 - The following recommended versions of react-native and react.
   * "react": "16.4.0",
   * "react-native": "0.55.4",
