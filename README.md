@@ -13,20 +13,21 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
 See the official [React Native website](https://facebook.github.io/react-native/) for an introduction to React Native.
 
 ### Bundling and testing
-1. Copy the two scripts **bundle.sh** and **share.sh** in to your project repo's root or child directory. You could even add this repo as a submodule for best results.
-2. Run `chmod +x bundle.sh share.sh`
-3. Run `./bundle.sh -e index.ios.js`, where index.ios.js is your entry-file. The entry-file path should be relative to the project root or package.json. For more help just type `./bundle.sh -h`
-4. Use the QR code generated to test locally following instructions from bundle.sh
+1. Copy the two scripts **bundle.sh** and **share.sh** in to your project repo's root or child directory. If you are using Git add this repo as a submodule for best results. From project root `git submodule add https://github.com/gidjituser/react-native-gidjit.git`. The following assume you added the submodule or copied scripts into subfolder react-native-gidjit.
+2. Run `chmod +x react-native-gidjit/bundle.sh react-native-gidjit/share.sh`
+3. Run `./react-native-gidjit/bundle.sh -e index.ios.js`, where index.ios.js is your entry-file. The entry-file path should be relative to the project root or package.json. For more help just type `./react-native-gidjit/bundle.sh -h`
+4. Use the QR code generated to test locally following the output instructions from bundle.sh
 
 ***You can install all the packages you like. All of your node modules and assets will be bundled. The exception are react native libraries that need linking. Fortunately, Gidjit comes with many common react native libraries already linked - listed below.***
 
 ### Move bundle/zip to cloud and share
-1. Run `./share.sh -u URL`, where URL is a publicly accessible location of the app.zip from the bundle section (For example Amazon S3 or Google Cloud drive). For more help just type `./share.sh -h`
-2. Share the QR code generated with others. Once they install Gidjit they can just scan the QR code with their Photo app and complete the rest of the setup.
+1. Move the generated app.zip from the bundle step to the cloud (For example Amazon S3 or Google Cloud drive). You can rename it if you like. Ensure it is gets public permissions to read.
+2. Run `./react-native-gidjit/share.sh -u URL`, where URL is the publicly accessible location. For more help just type `./react-native-gidjit/share.sh -h`
+3. Share the QR code generated with others. Once they install Gidjit they can just scan the QR code with their Photo app and complete the rest of the setup.
 
 ### What Gidjit Provides
 - Users can update your app from inside Gidjit. (As long as the cloud URL stays the same)
-- From the Gidjit App you can hide/show the primary app navigation bar with a three finger tap on the screen.
+- From the Gidjit app you can hide/show the primary app navigation bar with a three finger tap on the screen.
 - The following recommended versions of react-native and react.
   * "react": "16.4.0",
   * "react-native": "0.55.4",
