@@ -29,14 +29,15 @@ See the official [React Native website](https://facebook.github.io/react-native/
 - Your app/action can be updated inside Gidjit. (As long as the cloud URL stays the same)
 - You can hide/show Gidjit's primary app navigation bar with a three finger tap on the screen.
 - The following recommended versions of react-native and react.
-  * "react": "16.4.0",
-  * "react-native": "0.55.4",
+  * "react": "16.4.0"
+  * "react-native": "0.55.4"
 - There are also many great react native libraries already linked for you. Please contact us if you would like more
-    * "react-native-ble-plx": "^0.9.0",
-    * "react-native-device-info": "^0.21.5",
-    * "react-native-fetch-blob": "^0.10.8",
-    * "react-native-svg": "^6.3.1",
-    * "react-native-vector-icons": "^4.5.0",
+    * "react-native-ble-plx": "^0.9.0"
+    * "react-native-device-info": "^0.21.5"
+    * "react-native-fetch-blob": "^0.10.8"
+    * "react-native-svg": "^6.3.1"
+    * "react-native-vector-icons": "^4.5.0"
+    * "realm": "^2.7.2"
 - The following fonts have been linked/included in Gidjit for you
 	* Entypo.ttf
 	* EvilIcons.ttf
