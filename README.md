@@ -10,7 +10,9 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
 
 ## Introduction
 
-See the official [React Native website](https://facebook.github.io/react-native/) for an introduction to React Native.
+* See the official [React Native website](https://facebook.github.io/react-native/docs/getting-started.html) for getting started with React Native. Make sure to follow the section ***"Building Projects with Native Code"***.
+* If you used ***create-react-native-app*** with Expo as opposed to ***react-native init*** you will need to [eject]( https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md#ejecting-from-create-react-native-app) before following the next steps
+
 
 ### Bundling and testing
 1. Copy the two scripts **bundle.sh** and **share.sh** in to your project repo's root or child directory. If you are using Git add this repo as a submodule for best results. From project root `git submodule add https://github.com/gidjituser/react-native-gidjit.git`. The following assume you added the submodule or copied scripts into subfolder react-native-gidjit.
