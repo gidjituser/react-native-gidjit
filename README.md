@@ -49,8 +49,9 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
 	* MaterialIcons.ttf
 	* Octicons.ttf
 	* Zocial.ttf
-- Currently the following data Will be passed to your initial element
-	* props -> sessionID (can be used to check it different actions are launching your app)
+- Currently the following data is passed to your initial element. See [Properties](https://facebook.github.io/react-native/docs/communication-ios.html#properties) for more details.
+  * props -> sessionID (can be used to check it different actions are launching your app)
+  * props -> additional props specified in scripts. For example if your url is http://site.com/app.zip?name=value&color=blue your initial component be passed name and color.
 
 ### Examples
 **You can try these demos by scanning from you iPhone/iPad's photo app. Make sure Gidjit is installed first. Warning sometimes the photo app grabs the other QR code**
