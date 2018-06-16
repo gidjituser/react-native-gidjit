@@ -10,7 +10,7 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
 
 ## Introduction
 
-* See the official [React Native website](https://facebook.github.io/react-native/docs/getting-started.html) for getting started with React Native. Make sure to follow the section ***"Building Projects with Native Code"***.
+* See the official [React Native website](https://facebook.github.io/react-native/docs/getting-started.html) for getting started with React Native. Make sure to follow the section ***Building Projects with Native Code***.
 * If you used ***create-react-native-app*** with Expo as opposed to ***react-native init*** you will need to [eject]( https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md#ejecting-from-create-react-native-app) before following the next steps
 
 
