@@ -11,16 +11,17 @@ function showUsage {
     echo "Usage: $(basename "$0")
     [-h] help/usage
     [-u] public URL of react-native bundle created by the bundle script
-    [-p] pass custom props to your initial elements. A small JSON string.
-    To keep QR code small keep short. Valid values are String, Integer, or Boolean.
+    [-p] (Optional) Short JSON strings whose key/values will be passed as custom
+    props to your initial element. To keep QR code small keep short. Valid values
+    are String, Integer, Double, or Boolean.
     ex. '{\"n\":\"Tom\",\"c\":5}'
 
     Will output qrcode.png to ${HOME}/Downloads
 
     You must first upload the bundle to a public location and copy its URL
     ex. a public AWS S3 URL, Google Cloud Storage or other
-    It is recommnded to add an icon.png (120x120px) at the root of your directory that
-    will be used as an App icon.
+    It is recommended your bundle contains an icon.png (120x120px) at the root directory.
+    It will be used as an Action icon.
 
     Description:
     Place this script in the root or a child directory of your

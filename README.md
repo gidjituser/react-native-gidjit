@@ -50,8 +50,8 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
 	* Octicons.ttf
 	* Zocial.ttf
 - Currently the following data is passed to your initial element. See [Properties](https://facebook.github.io/react-native/docs/communication-ios.html#properties) for more details.
-  * props -> sessionID (can be used to check it different actions are launching your app)
-  * props -> additional props specified by the **-p** parameter of the **share.sh** script.  
+  * additional props specified by the **-p** parameter of the **share.sh** script.  
+  * sessionID (can be used to check it different actions are launching the app)
 
 ### Examples
 **You can try these demos by scanning from you iPhone/iPad's photo app. Make sure Gidjit is installed first. Warning sometimes the photo app grabs the other QR code**
