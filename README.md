@@ -50,7 +50,7 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
 	* MaterialIcons.ttf
 	* Octicons.ttf
 	* Zocial.ttf
-- Currently the following data is passed to your initial element. See [Properties](https://facebook.github.io/react-native/docs/communication-ios.html#properties) for more details.
+- Currently the following props are passed to your initial element. See [Properties](https://facebook.github.io/react-native/docs/communication-ios.html#properties) for more details.
   * additional props specified by the **-p** parameter of the **share.sh** script.  
   * sessionID (can be used to check it different actions are launching the app)
 
