@@ -26,7 +26,7 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
 1. Move the generated app.zip from the bundle step to the cloud (For example Amazon S3 or Google Cloud drive). You can rename it if you like. Ensure it is gets public permissions to read
 2. Run `./react-native-gidjit/share.sh -u URL`, where URL is the publicly accessible location. For more help just type `./react-native-gidjit/share.sh -h`
 3. Once Gidjit is installed on an iPhone/iPad, the QR code can be scanned by the **📷 Photo App** to install
-4. Share it! Users will need to have Gidjit installed first. They can install it from the   [AppStore](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
+4. Share it! Users will need to have Gidjit installed first. They can install it from the [AppStore](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
 
 ### What Gidjit Provides
 - Your app/action can be updated inside Gidjit. (As long as the cloud URL stays the same)
