@@ -11,21 +11,22 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
 ## Introduction
 
 * See the official [React Native website](https://facebook.github.io/react-native/docs/getting-started.html) for getting started with React Native. Make sure to follow the section ***Building Projects with Native Code***.
-* If you used ***create-react-native-app*** with Expo as opposed to ***react-native init*** you will need to [eject]( https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md#ejecting-from-create-react-native-app) before following the next steps
+* If you used ***create-react-native-app*** with Expo as opposed to ***react-native init***, you will need to [eject]( https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md#ejecting-from-create-react-native-app) before following the next steps
 
 
 ### Bundling and testing
-1. Copy the two scripts **bundle.sh** and **share.sh** in to your project repo's root or child directory. If you are using Git add this repo as a submodule for best results. From project root `git submodule add https://github.com/gidjituser/react-native-gidjit.git`. The following assume you added the submodule or copied scripts into subfolder react-native-gidjit.
-2. Run `chmod +x react-native-gidjit/bundle.sh react-native-gidjit/share.sh`
-3. Run `./react-native-gidjit/bundle.sh -e index.ios.js`, where index.ios.js is your entry-file. The entry-file path should be relative to the project root or package.json. For more help just type `./react-native-gidjit/bundle.sh -h`
+1. Copy the two scripts **bundle.sh** and **share.sh** in to your project repo's root or child directory. If you are using Git add this repo as a submodule for best results. From the project root, run: `git submodule add https://github.com/gidjituser/react-native-gidjit.git`. The following commands assume you added the submodule or copied scripts into subfolder react-native-gidjit.
+2. Run: `chmod +x react-native-gidjit/bundle.sh react-native-gidjit/share.sh`
+3. Run: `./react-native-gidjit/bundle.sh -e index.ios.js`, where index.ios.js is your entry-file. The entry-file path should be relative to the project root or package.json. For more help just type `./react-native-gidjit/bundle.sh -h`
 4. Use the QR code generated to test locally following the output instructions from bundle.sh
 
-***You can install all the packages you like. All of your node modules and assets will be bundled. The exception are react native libraries that need linking. Fortunately, Gidjit comes with many common react native libraries already linked - listed below.***
+***You can install all the packages you like. All of your node modules and assets will be bundled. The exception are react native libraries that need linking. Fortunately, Gidjit comes with many common react native libraries already linked - listed in the Gidjit Provides section.***
 
 ### Move bundle/zip to the cloud for sharing
-1. Move the generated app.zip from the bundle step to the cloud (For example Amazon S3 or Google Cloud drive). You can rename it if you like. Ensure it is gets public permissions to read.
+1. Move the generated app.zip from the bundle step to the cloud (For example Amazon S3 or Google Cloud drive). You can rename it if you like. Ensure it is gets public permissions to read
 2. Run `./react-native-gidjit/share.sh -u URL`, where URL is the publicly accessible location. For more help just type `./react-native-gidjit/share.sh -h`
-3. Once Gidjit is installed on an iPhone/iPad, the QR code can be scanned by the **📷 Photo App** to install.
+3. Once Gidjit is installed on an iPhone/iPad, the QR code can be scanned by the **📷 Photo App** to install
+4. Share it! Users will need to have Gidjit installed first. They can install it from the   [AppStore](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
 
 ### What Gidjit Provides
 - Your app/action can be updated inside Gidjit. (As long as the cloud URL stays the same)
