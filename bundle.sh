@@ -220,7 +220,7 @@ or in
 ${HOME}/Downloads/app.zip
 
 To share with others
-1. Move it to a cloud service like AWS S3, Google Cloud Storage, or other
+1. Move app.zip to a cloud service like AWS S3, Google Cloud Storage, or other. (app.zip can be renamed)
 2. Configure permissions so is accessible to the public and Copy the URL
 3. Run share.sh -u URL to generate a QR code so others can easily
 add, launch, and run your app on their iDevice through Gidjit.
