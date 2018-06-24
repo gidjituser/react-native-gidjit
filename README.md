@@ -35,7 +35,7 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
   * "react": "16.4.0"
   * "react-native": "0.55.4"
 - There are also many great react native libraries already linked for you. Please contact us if you would like more
-    * "react-native-ble-plx": "^0.9.0"
+    * "react-native-ble-plx": "^0.9.1"
     * "react-native-device-info": "^0.21.5"
     * "react-native-fetch-blob": "^0.10.8"
     * "react-native-svg": "^6.3.1"
