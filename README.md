@@ -40,7 +40,6 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
     * "react-native-fetch-blob": "^0.10.8"
     * "react-native-svg": "^6.3.1"
     * "react-native-vector-icons": "^4.5.0"
-    * "realm": "^2.7.2"
 - The following fonts have been linked/included in Gidjit for you
 	* Entypo.ttf
 	* EvilIcons.ttf
