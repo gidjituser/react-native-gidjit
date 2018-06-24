@@ -6,12 +6,16 @@ PURPLE='\033[0;35m'
 NC='\033[0m' # No Color
 
 entryFile=""
+devMode="false"
 function showUsage {
     echo "Usage: $(basename "$0")
     [-h] help/usage
-    [-e] entryFile Path expected by react-native bundle
+    [-e ARG] entryFile Path expected by react-native bundle
     Default: [PROJECT_ROOT]/index.ios.js
     (absolute path or relative from package.json location)
+    [-d] Bundle in development mode. No arguments.
+    Default: false 
+    If passed will give more verbose messages when run. 
 
     Description:
     Place this script in the root or child directory of your
@@ -35,12 +39,14 @@ function showUsage {
     $(basename "$0") -e js/index.ios.js
 "
 }
-while getopts "he:" opt; do
+while getopts "he:d" opt; do
   case ${opt} in
     h ) showUsage
         exit 0
       ;;
     e ) entryFile=${OPTARG}
+      ;;
+    d ) devMode="true"
       ;;
     \? ) showUsage
         exit 0
@@ -134,7 +140,7 @@ cp package.json $outputPath
 
 #bundle the project
 echo 'Preparing to bundle files. This may take a minute'
-react-native bundle --platform ios --dev false --entry-file "$entryFile" --bundle-output "$outputPath/main.ios.jsbundle" --assets-dest "$outputPath"
+react-native bundle --platform ios --dev "$devMode" --entry-file "$entryFile" --bundle-output "$outputPath/main.ios.jsbundle" --assets-dest "$outputPath"
 if [ $? -ne 0 ]; then
     echo -e "${RED}Could not bundle the project${NC}"
     cleanupFromScript
