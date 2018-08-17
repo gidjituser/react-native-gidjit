@@ -18,9 +18,10 @@ function showUsage {
 
     Will output qrcode.png to ${HOME}/Downloads
 
-    You must first upload the bundle to a public location and copy its URL
+    If you are NOT using Expo
+      * You must first upload the bundle to a public location and copy its URL
     ex. a public AWS S3 URL, Google Cloud Storage or other
-    It is recommended your bundle contains an icon.png (120x120px) at the root directory.
+      * It is recommended your bundle contains an icon.png (120x120px) at the root directory.
     It will be used as an Action icon.
 
     Description:
@@ -42,11 +43,17 @@ function showUsage {
     2. Select Edit Actions in the top right
     2. Select a Panel if requested
     3. Select 'All Other Actions'
-    4. Select 'Scan QR Code' (The other option 'React Native μApp from URL' is for use without QR)
+    4. Select 'Scan QR Code' (The other option 'React Native μApp from URL' is so the URL can be directly entered without a QR)
     5. Complete the rest of the setup - customizing icon and label of App
+
+    For Expo users you can also directly scan XDE's QR using the previous steps.
 
     Example:
     $(basename "$0") -u 'https://s3-us-west-2.amazonaws.com/g.../app.zip'  -p '{\"n\":\"Tom\",\"c\":5}'
+
+    $(basename "$0") -u 'exp6812112xxxxxxxxac://192.168.1.2:1900'
+
+    $(basename "$0") -u 'https://exp.host/@user/project' -p '{\"d\":\"data\"}'
 "
 }
 while getopts "hu:p:" opt; do
@@ -98,15 +105,19 @@ projectRootDir=$(pwd)
 if [ -z "$bundleURL" ]; then
     echo -e "${RED}No bundle URL (-u) passed ${NC}"
     echo -e "  "
+    exit 1
 fi
 
-#Make sure the .zip is accessible
-#Aid Charles Duffy - Stack overflow
-if curl --output /dev/null --silent --head --fail "${bundleURL}"; then
-	echo -e "${PURPLE}The zip appears to be accessible from ${bundleURL} ${NC}"
-else
-	echo -e "${RED}The zip does not seem to be accessible from ${bundleURL} ${NC}"
-	exit 1
+if  [[ $bundleURL != exp* ]] && [[ $bundleURL != https://exp.host* ]];
+then
+  #Make sure the is accessible if not expo
+  #Aid Charles Duffy - Stack overflow
+  if curl --output /dev/null --silent --head --fail "${bundleURL}"; then
+  	echo -e "${PURPLE}The zip appears to be accessible from ${bundleURL} ${NC}"
+  else
+  	echo -e "${RED}The zip does not seem to be accessible from ${bundleURL} ${NC}"
+  	exit 1
+  fi
 fi
 
 #copy the QR code to Downloads
@@ -153,10 +164,12 @@ The url of app.zip can be used instead)
 6. Select 'Scan QR Code' and scan the generated QR code
 7. Complete the rest of the setup - customizing icon and label of the App if desired
 
-Users can update from Gidjit. To do so
+If this is an Expo project updates are handled automatically when a new version is published.
+
+Otherwise users can update the action from Gidjit by
 1. Open Gidjit
-1. From the main screen, select the action type 'Launch Custom or React Native Actions'
-3. Launch the existing action
+1. From the Home screen, select the action type 'Launch Custom or React Native Actions'
+3. Launch this action
 4. Select the info icon in the top left (ℹ️_)
 5. Select 'Update' button, version information will be taken from your package.json
 6. Press 'Done' in the top right
