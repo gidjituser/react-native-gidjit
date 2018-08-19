@@ -40,12 +40,12 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
   * "react": "16.3.1"
   * "react-native": "0.54.4"
 - Expo SDK versions 28 and 29. New versions will be added regularly.
-- There are also great react native libraries already linked for you. Please contact us if you would like more
+- There are also great react native libraries already linked for you. Please contact us if you would like more. _Note for Expo. These currently work only with latest SDK in this case 29_.
     * "react-native-ble-plx": "^0.10.0"
     * "react-native-device-info": "^0.21.5"
     * "react-native-fetch-blob": "^0.10.8"
-- Currently the following props are passed to your initial element. See [Properties](https://facebook.github.io/react-native/docs/communication-ios.html#properties) for more details.
-  * additional props specified by the **-p** parameter of the **share.sh** script.  
+- Currently the following initial props are passed to your initial element. See [Properties](https://facebook.github.io/react-native/docs/communication-ios.html#properties) for more details. _Note for Expo. Initial props can be found in **this.props.exp**_.
+  * additional props specified by the **-p** parameter of the **share.sh** script.
   * sessionID (can be used to check it different actions are launching the app)
 
 ### Examples

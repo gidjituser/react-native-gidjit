@@ -14,7 +14,7 @@ function showUsage {
     [-p] (Optional) Short JSON strings whose key/values will be passed as custom
     props to your initial element. To keep QR code small keep short. Valid values
     are String, Integer, Double, or Boolean.
-    ex. '{\"n\":\"Tom\",\"c\":5}'
+    ex. '{n:\\\"Tom T.\\\",c:5}'
 
     Will output qrcode.png to ${HOME}/Downloads
 
@@ -49,11 +49,11 @@ function showUsage {
     For Expo users you can also directly scan XDE's QR using the previous steps.
 
     Example:
-    $(basename "$0") -u 'https://s3-us-west-2.amazonaws.com/g.../app.zip'  -p '{\"n\":\"Tom\",\"c\":5}'
+    $(basename "$0") -u 'https://s3-us-west-2.amazonaws.com/g.../app.zip'  -p '{n:\\\"Tom T.\\\",c:5}'
 
     $(basename "$0") -u 'exp6812112xxxxxxxxac://192.168.1.2:1900'
 
-    $(basename "$0") -u 'https://exp.host/@user/project' -p '{\"d\":\"data\"}'
+    $(basename "$0") -u 'https://exp.host/@user/project' -p '{d:\\\"some data\\\"}'
 "
 }
 while getopts "hu:p:" opt; do
@@ -147,7 +147,7 @@ qrcode -o "${copyDir}/qrcode.png" "gidjit://gidjit.com/newAction?action=$gidjitE
 
 echo -e "${LIGHT_GREEN}
 
-qrcode.png has been output to ${copyDir}/Downloads. Your app can now be shared with others.
+qrcode.png has been output to ${copyDir}. Your app can now be shared with others.
 
 To use,
 1. Scan the QR code generated with the photo app of your iPhone/iPad
