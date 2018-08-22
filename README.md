@@ -12,10 +12,9 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
 
 * See the official [React Native website](https://facebook.github.io/react-native/docs/getting-started.html) for getting started with React Native. Make sure to follow the section ***Building Projects with Native Code***.
 * Notes for Expo users, detached or not.
-  1. Add your action quickly using the following sections **1. Get Scripts** and **4. Sharing** only.
-  2. There are two small bugs that will be fixed in next version the week of August 20th.
-    * initial props are not been passed into main component
-    * linked libraries mentioned below cannot be accessed
+  1. Add your app quickly using the following sections **1. Get Scripts** and **4. Sharing** only.
+  2. You can use the additional pre linked libraries mentioned below. For example react-native-ble-plx (latest SDK[29] only).
+
 
 ### 1. Get Scripts
 1. Copy the two scripts **bundle.sh** and **share.sh** in to your project repo's root or child directory. If you are using Git add this repo as a submodule for best results. From the project root, run: `git submodule add https://github.com/gidjituser/react-native-gidjit.git`. The following commands assume you added the submodule or copied scripts into subfolder react-native-gidjit.
