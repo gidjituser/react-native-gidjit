@@ -1,19 +1,21 @@
-# react-native-gidjit
-# Description
+### **react-native-gidjit**
 
-This Repo contains two simple scripts that will allow you to add, launch, and run your React Native or Expo apps/actions inside of Gidjit - Smart Launcher.
-The scripts will generate QR codes so that you can easily share it across your iDevices, or with family and friends.
+This Repo contains two simple scripts that will allow you to add, launch, and run your React Native or Expo apps inside of Gidjit - Smart Launcher.
+The scripts in this repo will generate QR codes so that you can easily share it across your iDevices, or with family and friends. They are not required for Expo apps as you can just enter or paste the **exp://** URL manually in Gidjit.
 Gidjit is available on the  [AppStore](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
-Currently iOS 10.0+ only. We will begin working on Android variant soon.
+Currently iOS 10.0+ only.
 
-![Download](https://s3-us-west-2.amazonaws.com/gidjit-public/iTunesGidjit.png)
+Notes for Expo users
+  1. You do not have to run any of the scripts in this repo. You can simply enter or paste the **exp://** URL in the text field while you are creating the action inside of Gidjit.
+  2. To generate a QR code use the sections **1. Get Scripts** and **4. Sharing** only. This way your Expo app can be quickly added to Gidjit with a scan from your iDevice Photo App.
 
 ## Introduction
 
+* If you do not have Gidjit, scan the QR code below from your iDevice to view and install from the AppStore
+
+![Download](https://s3-us-west-2.amazonaws.com/gidjit-public/iTunesGidjit.png)
+
 * See the official [React Native website](https://facebook.github.io/react-native/docs/getting-started.html) for getting started with React Native. Make sure to follow the section ***Building Projects with Native Code***.
-* Notes for Expo users, detached or not.
-  1. Add your app quickly using the following sections **1. Get Scripts** and **4. Sharing** only.
-  2. You can use the additional pre linked libraries mentioned below. For example react-native-ble-plx (latest SDK[31] only).
 
 
 ### 1. Get Scripts
@@ -40,10 +42,10 @@ Currently iOS 10.0+ only. We will begin working on Android variant soon.
 - The following recommended versions of react-native and react. Correspond with SDK31 of Expo.
   * "react": "16.5.2"
   * "react-native": "0.57.0"
-- Expo SDK versions 30 and 31. New versions will be added regularly.
-- There are also great react native libraries already linked for you. Please contact us if you would like more. _Note for Expo. These currently work only with latest SDK in this case 31_.
+- Expo SDK versions 26 through 32. New versions will be added regularly.
+- There are also great react native libraries already linked for you. Please contact us if you would like more. _Note for Expo. These currently work only with latest SDK in this case 32_.
     * "react-native-ble-plx": "^1.0.1"
-    * "react-native-device-info": "^0.24.3"
+    * "react-native-device-info": "^0.26.3"
     * "react-native-fetch-blob": "^0.10.8"
 - Currently the following initial props are passed to your initial element. See [Properties](https://facebook.github.io/react-native/docs/communication-ios.html#properties) for more details. _Note for Expo. Initial props can be found in **this.props.exp**_.
   * additional props specified by the **-p** parameter of the **share.sh** script.

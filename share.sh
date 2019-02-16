@@ -150,26 +150,16 @@ echo -e "${LIGHT_GREEN}
 qrcode.png has been output to ${copyDir}. Your app can now be shared with others.
 
 To use,
-1. Scan the QR code generated with the photo app of your iPhone/iPad
+1. Scan the QR code generated with the Photo app of your iPhone/iPad
 2. You will be prompted to open with Gidjit.
 3. Complete the rest of the setup - customizing icon and label of the App if desired
--- Or --
-1. Open Gidjit
-2. Select Edit Actions in the top right
-3. Select a Panel (if in advanced mode)
-4. Select 'All Other Actions'
-5. Select 'From QR Code'
-(The other option 'React Native μApp from URL' is for use without the QR code.
-The url of app.zip can be used instead)
-6. Select 'Scan QR Code' and scan the generated QR code
-7. Complete the rest of the setup - customizing icon and label of the App if desired
 
 If this is an Expo project updates are handled automatically when a new version is published.
 
 Otherwise users can update the action from Gidjit by
 1. Open Gidjit
-1. From the Home screen, select the action type 'Launch Custom or React Native Actions'
-3. Launch this action
+1. From the Home screen, select the action type 'Launch User URL, RN, or Expo Actions'
+3. Launch your action
 4. Select the info icon in the top left (ℹ️_)
 5. Select 'Update' button, version information will be taken from your package.json
 6. Press 'Done' in the top right
