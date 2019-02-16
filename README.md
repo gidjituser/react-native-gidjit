@@ -1,12 +1,12 @@
 ### **react-native-gidjit**
 
 This Repo contains two simple scripts that will allow you to add, launch, and run your React Native or Expo apps inside of Gidjit - Smart Launcher.
-The scripts in this repo will generate QR codes so that you can easily share it across your iDevices, or with family and friends. They are not required for Expo apps as you can just enter or paste the **exp://** URL manually in Gidjit.
+The scripts in this repo will generate QR codes so that you can easily share it across your iDevices, or with family and friends. They are not required for Expo apps as you can just enter or paste the **exp://** or **https://expo.host...** URL manually in Gidjit.
 Gidjit is available on the  [AppStore](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
 Currently iOS 10.0+ only.
 
 Notes for Expo users
-  1. You do not have to run any of the scripts in this repo. You can simply enter or paste the **exp://** URL in the text field while you are creating the action inside of Gidjit.
+  1. You do not have to run any of the scripts in this repo. You can simply enter or paste the **exp://** or **https://expo.host...** URL in the text field while you are creating the action inside of Gidjit.
   2. To generate a QR code use the sections **1. Get Scripts** and **4. Sharing** only. This way your Expo app can be quickly added to Gidjit with a scan from your iDevice Photo App.
 
 ## Introduction
@@ -23,8 +23,8 @@ Notes for Expo users
 2. Run: `chmod +x react-native-gidjit/bundle.sh react-native-gidjit/share.sh`
 
 ### 2. Bundling and testing
-2. Run: `./react-native-gidjit/bundle.sh -e index.ios.js`, where index.ios.js is your entry-file. The entry-file path should be relative to the project root or package.json. For more help just type `./react-native-gidjit/bundle.sh -h`
-3. Use the QR code generated to test locally following the output instructions from bundle.sh
+1. Run: `./react-native-gidjit/bundle.sh -e index.ios.js`, where index.ios.js is your entry-file. The entry-file path should be relative to the project root or package.json. For more help just type `./react-native-gidjit/bundle.sh -h`
+2. Use the QR code generated to test locally following the output instructions from bundle.sh
 
 ***You can install all the packages you like. All of your node modules and assets will be bundled. The exception are react native libraries that need linking. Fortunately, Gidjit comes with common react native libraries already linked - listed in the Gidjit Provides section.***
 

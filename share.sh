@@ -137,8 +137,7 @@ fi
 echo "gidjit Action is
 $gidjitAction
 "
-gidjitEncodedAction="$(perl -MURI::Escape -e 'print uri_escape($ARGV[0]);' "$gidjitAction")"
-
+gidjitEncodedAction=$(python -c "import urllib; print urllib.quote('''$gidjitAction''')")
 #Generate qrcode in terminal
 qrcode "gidjit://gidjit.com/newAction?action=$gidjitEncodedAction"
 
