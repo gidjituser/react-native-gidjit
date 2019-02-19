@@ -1,13 +1,11 @@
 ### **react-native-gidjit**
 
-This Repo contains two simple scripts that will allow you to add, launch, and run your React Native or Expo apps inside of Gidjit - Smart Launcher.
-The scripts in this repo will generate QR codes so that you can easily share it across your iDevices, or with family and friends. They are not required for Expo apps as you can just enter or paste the **exp://** or **https://expo.host...** URL manually in Gidjit.
-Gidjit is available on the  [AppStore](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
+Gidjit - Smart Launcher allows you to embed, update, and quickly launch your React Native or Expo apps. This Repo contains two simple scripts. The first will bundle your app and the second will generate QR codes so that you can easily share it. Gidjit is available on the [AppStore](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
 Currently iOS 10.0+ only.
 
-Notes for Expo users
+Notes for Expo apps
   1. You do not have to run any of the scripts in this repo. You can simply enter or paste the **exp://** or **https://expo.host...** URL in the text field while you are creating the action inside of Gidjit.
-  2. To generate a QR code use the sections **1. Get Scripts** and **4. Sharing** only. This way your Expo app can be quickly added to Gidjit with a scan from your iDevice Photo App.
+  2. To generate a QR code use the sections **1. Get Scripts** and **4. Sharing** only. This way your Expo app can be quickly added to Gidjit with a scan from your iDevice **📷 Photo App**.
 
 ## Introduction
 
@@ -19,8 +17,9 @@ Notes for Expo users
 
 
 ### 1. Get Scripts
-1. Copy the two scripts **bundle.sh** and **share.sh** in to your project repo's root or child directory. If you are using Git add this repo as a submodule for best results. From the project root, run: `git submodule add https://github.com/gidjituser/react-native-gidjit.git`. The following commands assume you added the submodule or copied scripts into subfolder react-native-gidjit.
-2. Run: `chmod +x react-native-gidjit/bundle.sh react-native-gidjit/share.sh`
+1. Open your terminal
+2. Copy the two scripts **bundle.sh** and **share.sh** in to your project repo's root or child directory. If you are using Git add this repo as a submodule for best results. From the project root, run: `git submodule add https://github.com/gidjituser/react-native-gidjit.git`. The following commands assume you added the submodule or copied scripts into subfolder react-native-gidjit.
+3. Run: `chmod +x react-native-gidjit/bundle.sh react-native-gidjit/share.sh`
 
 ### 2. Bundling and testing
 1. Run: `./react-native-gidjit/bundle.sh -e index.ios.js`, where index.ios.js is your entry-file. The entry-file path should be relative to the project root or package.json. For more help just type `./react-native-gidjit/bundle.sh -h`
@@ -32,8 +31,8 @@ Notes for Expo users
   Move the generated app.zip from the bundle step to the cloud (For example Amazon S3 or Google Cloud drive). You can rename it if you like. Ensure it is gets public permissions to read
 
 ### 4. Sharing
-  1. Run `./react-native-gidjit/share.sh -u URL`, where URL is the publicly accessible location. For more help just type `./react-native-gidjit/share.sh -h`. For Expo this can be the developing or published XDE URL.
-  2. Once Gidjit is installed on an iPhone/iPad, the QR code can be scanned by the **📷 Photo App** to install
+  1. Run `./react-native-gidjit/share.sh -u URL`, where URL is the publicly accessible location. For more help just type `./react-native-gidjit/share.sh -h`. For Expo this can be the developing or published URL.
+  2. Look for the file __qrcode.png__ in your Downloads. Once Gidjit is installed on an iPhone/iPad, the QR code can be scanned by the **📷 Photo App** to install. 
   3. Share it! Users will need to have Gidjit installed first. They can install it from the [AppStore](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
 
 ## What Gidjit Provides
