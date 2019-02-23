@@ -7,9 +7,9 @@ Notes for Expo apps
   1. You do not have to run any of the scripts in this repo. You can simply enter or paste the **exp://** or **https://expo.host...** URL in the text field while you are creating the action inside of Gidjit.
   2. To generate a QR code use the sections **1. Get Scripts** and **4. Sharing** only. This way your Expo app can be quickly added to Gidjit with a scan from your iDevice **📷 Photo App**.
 
-## Introduction
-
 [Gidjit Website](https://gidjit.concerco.space/)
+
+## Introduction
 
 * If you do not have Gidjit, scan the QR code below from your iDevice to view and install from the AppStore
 
