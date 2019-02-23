@@ -1,6 +1,6 @@
 ### **react-native-gidjit**
 
-Gidjit - Smart Launcher allows you to embed, update, and quickly launch your React Native or Expo apps. This Repo contains two simple scripts. The first will bundle your app and the second will generate a QR code so that you can easily add your app to Gidjit with a snap from the Photo App. Gidjit is available on the [AppStore](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
+Gidjit - Smart Launcher allows you to embed, update, and quickly launch your React Native or Expo apps. This Repo contains two simple scripts. The first will bundle your app and the second will generate a QR code so that you can easily add your app to Gidjit with a snap from the Photo App. Gidjit is available on the [App Store](https://itunes.apple.com/us/app/gidjit-smart-launcher/id1179176359?at=1001lnP4&mt=8).
 Currently iOS 11.0+ only.
 
 Notes for Expo apps
@@ -8,6 +8,8 @@ Notes for Expo apps
   2. To generate a QR code use the sections **1. Get Scripts** and **4. Sharing** only. This way your Expo app can be quickly added to Gidjit with a scan from your iDevice **📷 Photo App**.
 
 ## Introduction
+
+[Gidjit Website](https://gidjit.concerco.space/)
 
 * If you do not have Gidjit, scan the QR code below from your iDevice to view and install from the AppStore
 
@@ -38,7 +40,7 @@ Notes for Expo apps
 ## What Gidjit Provides
 - Your app/action can be updated inside Gidjit.
 - You can hide/show Gidjit's primary app navigation bar with a three finger tap on the screen.
-- The following recommended versions of react-native and react. Correspond with SDK31 of Expo.
+- The following recommended versions of react-native and react.
   * "react": "16.5.2"
   * "react-native": "0.57.0"
 - Expo SDK versions 26 through 32. New versions will be added regularly.
