@@ -41,12 +41,12 @@ Notes for Expo apps
 - Your app/action can be updated inside Gidjit.
 - You can hide/show Gidjit's primary app navigation bar with a three finger tap on the screen.
 - The following recommended versions of react-native and react.
-  * "react": "16.5.2"
-  * "react-native": "0.57.0"
-- Expo SDK versions 26 through 32. New versions will be added regularly.
-- There are also great react native libraries already linked for you. Please contact us if you would like more. _Note for Expo. These currently work only with latest SDK in this case 32_.
-    * "react-native-ble-plx": "^1.0.1"
-    * "react-native-device-info": "^0.26.3"
+  * "react": "16.8.6"
+  * "react-native": "0.59.8"
+- Expo SDK version 33. New versions will be added regularly and it will be backward compatible with older versoins by SDK 34.
+- There are also great react native libraries already linked for you. Please contact us if you would like more. _Note for Expo. These currently work only with latest SDK in this case 33_.
+    * "react-native-ble-plx": "^1.0.3"
+    * "react-native-device-info": "^2.1.2"
     * "react-native-fetch-blob": "^0.10.8"
 - Currently the following initial props are passed to your initial element. See [Properties](https://facebook.github.io/react-native/docs/communication-ios.html#properties) for more details. _Note for Expo. Initial props can be found in **this.props.exp**_.
   * additional props specified by the **-p** parameter of the **share.sh** script.
