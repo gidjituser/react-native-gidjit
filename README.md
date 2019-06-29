@@ -43,7 +43,7 @@ Notes for Expo apps
 - The following recommended versions of react-native and react.
   * "react": "16.8.6"
   * "react-native": "0.59.8"
-- Expo SDK version 33. New versions will be added regularly and it will be backward compatible with older versoins by SDK 34.
+- Expo SDK version 33. New versions will be added regularly. Gidjit will be backward compatible with older versions of EXPO beginning with the next release of SDK 34.
 - There are also great react native libraries already linked for you. Please contact us if you would like more. _Note for Expo. These currently work only with latest SDK in this case 33_.
     * "react-native-ble-plx": "^1.0.3"
     * "react-native-device-info": "^2.1.2"
